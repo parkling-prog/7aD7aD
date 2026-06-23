@@ -8,139 +8,110 @@
 <meta property="og:title" content="免費長照課程開放報名" />
 <meta property="og:description" content="0 元學習,讓愛更專業、照顧更安心。立即免費了解課程。" />
 <meta property="og:image" content="https://warm-heart-recruit.lovable.app/__l5e/assets-v1/051e3b75-addc-422e-9c09-17f2ede9dae9/hero-poster.png" />
-
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&family=Noto+Serif+TC:wght@600;700;900&family=Ma+Shan+Zheng&display=swap" rel="stylesheet">
-<script src="https://cdn.tailwindcss.com"></script>
-
-<!-- Meta Pixel Code -->
-<script>
-!function(f,b,e,v,n,t,s)
-{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-n.queue=[];t=b.createElement(e);t.async=!0;
-t.src=v;s=b.getElementsByTagName(e)[0];
-s.parentNode.insertBefore(t,s)}(window, document,'script',
-'https://connect.facebook.net/en_US/fbevents.js');
-fbq('init', '1930813020967499');
-fbq('init', '2166630917467564');
-fbq('init', '1481700629833457');
-fbq('init', '4469438849987376');
-fbq('init', '895074456960259');
-fbq('init', '1371090328220504');
-fbq('track', 'PageView');
-</script>
-<noscript>
-<img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=1930813020967499&ev=PageView&noscript=1"/>
-<img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=2166630917467564&ev=PageView&noscript=1"/>
-<img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=1481700629833457&ev=PageView&noscript=1"/>
-<img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=4469438849987376&ev=PageView&noscript=1"/>
-<img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=895074456960259&ev=PageView&noscript=1"/>
-<img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=1371090328220504&ev=PageView&noscript=1"/>
-</noscript>
-<!-- End Meta Pixel Code -->
-
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&family=Noto+Serif+TC:wght@600;700;900&display=swap" />
 <style>
-:root{
-  --bg:#FFF9F2; --fg:#2B2B2B; --muted:#6B6B6B; --card:#FFFFFF; --border:#F0E6D8;
-  --primary:#E8743C; --accent:#FFE3CF; --warm:#FFD9B8;
-  --line-green:#06C755; --line-green-dark:#05A847;
-}
-body{font-family:'Noto Sans TC',sans-serif;background:var(--bg);color:var(--fg);margin:0;}
-h1,h2{font-family:'Noto Serif TC',serif;}
-.text-primary{color:var(--primary);}
-.bg-card{background:var(--card);}
-.border-border{border-color:var(--border);}
-.text-muted{color:var(--muted);}
-.grad-text{background:linear-gradient(135deg,#E8743C,#F2A65A);-webkit-background-clip:text;background-clip:text;color:transparent;}
-.btn-line{background:var(--line-green);color:#fff;border-radius:9999px;font-weight:700;display:inline-flex;align-items:center;justify-content:center;gap:.5rem;padding:1.25rem 2.5rem;font-size:1.125rem;box-shadow:0 10px 30px -10px rgba(6,199,85,.6);text-decoration:none;transition:.2s;}
-.btn-line:hover{background:var(--line-green-dark);}
-@keyframes breathe{0%,100%{transform:scale(1);}50%{transform:scale(1.04);}}
-@keyframes bounceY{0%,100%{transform:translateY(0);}50%{transform:translateY(-6px);}}
-.btn-breathe{animation:breathe 2s ease-in-out infinite;}
-.btn-bouncey{animation:bounceY 1s ease-in-out infinite;display:inline-block;}
-.blob{position:absolute;border-radius:9999px;filter:blur(60px);pointer-events:none;}
-.hero-img-wrap{position:relative;margin:2.5rem auto 0;max-width:56rem;}
-.hero-img-glow{position:absolute;inset:-1rem;border-radius:2.5rem;background:linear-gradient(135deg,#FFE3CF,#FFD9B8);opacity:.7;filter:blur(40px);}
-.hero-img{position:relative;border-radius:2rem;overflow:hidden;border:1px solid var(--border);background:#fff;box-shadow:0 20px 60px -20px rgba(232,116,60,.35);}
-.hero-img img{display:block;width:100%;height:auto;}
+  :root{
+    --bg:#FFF9F3; --card:#ffffff; --foreground:#2B1A12; --muted:#7A6A60;
+    --primary:#E8743A; --accent:#FFE0B2; --warm:#FFD0A8; --border:#F1E3D3;
+    --line-green:#06C755; --line-green-dark:#04A445;
+    --shadow:0 20px 50px -20px rgba(232,116,58,.35);
+    --grad-primary:linear-gradient(90deg,#E8743A,#D94F2A);
+    --grad-warm:linear-gradient(135deg,#FFE0B2,#FFD0A8);
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html,body{font-family:"Noto Sans TC",sans-serif;color:var(--foreground);background:var(--bg);-webkit-font-smoothing:antialiased}
+  main{position:relative;min-height:100vh;overflow:hidden}
+  .blob{position:absolute;border-radius:9999px;filter:blur(80px);pointer-events:none}
+  .b1{top:-8rem;left:-8rem;width:24rem;height:24rem;background:rgba(255,224,178,.6)}
+  .b2{top:33%;right:-10rem;width:28rem;height:28rem;background:rgba(232,116,58,.18)}
+  .b3{bottom:0;left:50%;transform:translateX(-50%);width:26rem;height:26rem;background:rgba(255,208,168,.5)}
+  .container{position:relative;max-width:72rem;margin:0 auto;padding:2.5rem 1rem 2rem}
+  .badge{display:inline-flex;align-items:center;gap:.5rem;border:1px solid rgba(232,116,58,.25);background:#fff;color:var(--primary);padding:.5rem 1rem;border-radius:9999px;font-size:.875rem;text-decoration:none;box-shadow:0 2px 8px rgba(0,0,0,.04)}
+  .center{display:flex;justify-content:center}
+  h1{margin-top:1.25rem;text-align:center;font-family:"Noto Serif TC",serif;font-weight:900;font-size:clamp(1.85rem,5.5vw,3.6rem);line-height:1.2}
+  .grad-text{background:var(--grad-primary);-webkit-background-clip:text;background-clip:text;color:transparent}
+  .lede{max-width:42rem;margin:1rem auto 0;text-align:center;color:var(--muted);font-size:clamp(1rem,2.2vw,1.25rem);line-height:1.7}
+  .cta-wrap{margin-top:1.5rem;display:flex;flex-direction:column;align-items:center;gap:.75rem}
+  .btn{display:inline-flex;align-items:center;justify-content:center;gap:.5rem;background:var(--line-green);color:#fff;font-weight:700;font-size:1.125rem;padding:1.1rem 2.5rem;border-radius:9999px;text-decoration:none;box-shadow:var(--shadow);animation:breathe 2s ease-in-out infinite;width:100%;max-width:22rem}
+  .btn:hover{background:var(--line-green-dark)}
+  @keyframes breathe{0%,100%{transform:scale(1)}50%{transform:scale(1.04)}}
+  @keyframes bounce{0%,100%{transform:translateY(0)}50%{transform:translateY(-25%)}}
+  .bounce{display:inline-block;animation:bounce 1s infinite}
+  .hint{display:flex;flex-direction:column;align-items:center;gap:.25rem;color:var(--line-green);font-weight:600;font-size:.95rem}
+  .hero-img{position:relative;max-width:56rem;margin:2.5rem auto 0}
+  .hero-img .glow{position:absolute;inset:-1rem;border-radius:2.5rem;background:var(--grad-warm);opacity:.7;filter:blur(40px)}
+  .hero-img .frame{position:relative;overflow:hidden;border-radius:2rem;border:1px solid var(--border);background:#fff;box-shadow:var(--shadow)}
+  .hero-img img{display:block;width:100%;height:auto}
+  section.who{max-width:56rem;margin:0 auto;padding:4rem 1rem}
+  h2{text-align:center;font-family:"Noto Serif TC",serif;font-weight:700;font-size:clamp(1.5rem,3.5vw,2.25rem)}
+  .sub{margin-top:.75rem;text-align:center;color:var(--muted)}
+  ul.check{list-style:none;margin:2rem auto 0;display:grid;gap:.75rem;grid-template-columns:repeat(2,1fr);max-width:36rem;place-items:center}
+  @media(min-width:768px){ul.check{grid-template-columns:repeat(3,1fr)}}
+  ul.check li{display:flex;align-items:center;gap:.5rem;padding:.75rem 1rem;font-weight:500}
+  ul.check svg{flex-shrink:0;color:var(--primary)}
+  footer{max-width:56rem;margin:0 auto;border-top:1px solid var(--border);padding:1.5rem 1rem 2rem;text-align:center;font-size:.75rem;color:var(--muted)}
 </style>
 </head>
 <body>
-<main class="relative min-h-screen overflow-hidden">
-  <div class="absolute inset-0 overflow-hidden">
-    <div class="blob" style="top:-8rem;left:-8rem;width:24rem;height:24rem;background:var(--accent);opacity:.6;"></div>
-    <div class="blob" style="top:30%;right:-10rem;width:28rem;height:28rem;background:var(--primary);opacity:.15;"></div>
-    <div class="blob" style="bottom:0;left:50%;transform:translateX(-50%);width:26rem;height:26rem;background:var(--warm);opacity:.5;"></div>
-  </div>
+<main>
+  <div class="blob b1"></div><div class="blob b2"></div><div class="blob b3"></div>
 
-  <!-- HERO -->
-  <section class="relative mx-auto max-w-6xl px-4 pt-10 pb-8 md:pt-24 md:pb-12">
-    <div class="flex justify-center">
-      <a href="https://line.me/ti/p/rvh9WdJGcm" class="inline-flex items-center gap-2 rounded-full border bg-card px-4 py-2 text-sm shadow-sm" style="border-color:rgba(232,116,60,.2);color:var(--primary);">
-        ✨ 正在招募中 · 名額有限 →
-      </a>
+  <section class="container">
+    <div class="center">
+      <a class="badge" href="https://line.me/ti/p/rj9FtpZEV6">✨ 正在招募中 · 名額有限 →</a>
     </div>
 
-    <h1 class="mt-5 text-center text-3xl md:text-6xl font-black leading-tight">
+    <h1>
       免費長照課程開放報名<br/>
       <span class="grad-text">讓愛更專業,讓照顧更安心</span>
     </h1>
-    <p class="mx-auto mt-4 max-w-2xl text-center text-base md:text-xl text-muted">
+
+    <p class="lede">
       0 元學習,專業師資全程指導<br/>
       一份送給自己與家人最好的禮物,現在就免費加入
     </p>
 
-    <div class="mt-6 flex flex-col items-center gap-3">
-      <a href="https://line.me/ti/p/rvh9WdJGcm" class="btn-line btn-breathe">
-        ❤️ 立即免費了解課程
+    <div class="cta-wrap">
+      <a class="btn" href="https://line.me/ti/p/rj9FtpZEV6">
+        ❤ 立即免費了解課程
       </a>
-      <p class="flex flex-col items-center gap-1 text-sm font-medium" style="color:var(--line-green);">
-        <span class="btn-bouncey text-2xl">👆</span>
+      <p class="hint">
+        <span class="bounce" style="font-size:1.5rem">👆</span>
         點擊加入 LINE,免費諮詢不用等!
       </p>
     </div>
 
-    <div class="hero-img-wrap">
-      <div class="hero-img-glow"></div>
-      <div class="hero-img">
+    <div class="hero-img">
+      <div class="glow"></div>
+      <div class="frame">
         <img src="https://warm-heart-recruit.lovable.app/__l5e/assets-v1/051e3b75-addc-422e-9c09-17f2ede9dae9/hero-poster.png" alt="免費長照課程" />
       </div>
     </div>
   </section>
 
-  <!-- WHO -->
-  <section class="relative mx-auto max-w-4xl px-4 py-16 md:py-24">
-    <div class="text-center">
-      <h2 class="text-2xl md:text-4xl font-bold">我們在找這樣的你</h2>
-      <p class="mt-3 text-sm md:text-base text-muted">無需經驗,我們提供完整培訓與彈性排班</p>
-    </div>
-
-    <ul class="mx-auto mt-8 grid max-w-2xl gap-3 grid-cols-2 md:grid-cols-3 place-items-center">
-      <li class="flex items-center gap-2 px-4 py-3 text-sm font-medium"><span class="text-primary">✓</span>有愛心與耐心</li>
-      <li class="flex items-center gap-2 px-4 py-3 text-sm font-medium"><span class="text-primary">✓</span>喜歡與人互動</li>
-      <li class="flex items-center gap-2 px-4 py-3 text-sm font-medium"><span class="text-primary">✓</span>細心負責任</li>
-      <li class="flex items-center gap-2 px-4 py-3 text-sm font-medium"><span class="text-primary">✓</span>樂於助人</li>
-      <li class="flex items-center gap-2 px-4 py-3 text-sm font-medium"><span class="text-primary">✓</span>願意學習成長</li>
-      <li class="flex items-center gap-2 px-4 py-3 text-sm font-medium"><span class="text-primary">✓</span>重視家庭情感</li>
+  <section class="who">
+    <h2>我們在找這樣的你</h2>
+    <p class="sub">無需經驗,我們提供完整培訓與彈性排班</p>
+    <ul class="check">
+      <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><path d="m9 12 2 2 4-4"/></svg>有愛心與耐心</li>
+      <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><path d="m9 12 2 2 4-4"/></svg>喜歡與人互動</li>
+      <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><path d="m9 12 2 2 4-4"/></svg>細心負責任</li>
+      <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><path d="m9 12 2 2 4-4"/></svg>樂於助人</li>
+      <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><path d="m9 12 2 2 4-4"/></svg>願意學習成長</li>
+      <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><path d="m9 12 2 2 4-4"/></svg>重視家庭情感</li>
     </ul>
 
-    <div class="mt-8 flex flex-col items-center gap-3">
-      <a href="https://line.me/ti/p/rvh9WdJGcm" class="btn-line btn-breathe">
-        📞 我要免費報名
-      </a>
-      <p class="flex items-center gap-1 text-sm font-bold" style="color:var(--line-green-dark);">
-        <span class="btn-bouncey">🔥</span>
-        名額有限,馬上點擊加入 LINE 免費領取課程資訊!
+    <div class="cta-wrap" style="margin-top:2rem">
+      <a class="btn" href="https://line.me/ti/p/rj9FtpZEV6">📞 我要免費報名</a>
+      <p class="hint" style="color:var(--line-green-dark);font-weight:700">
+        <span class="bounce">🔥</span> 名額有限,馬上點擊加入 LINE 免費領取課程資訊!
       </p>
     </div>
   </section>
 
-  <footer class="relative mx-auto max-w-4xl border-t px-4 pt-6 pb-8 text-center text-xs text-muted border-border md:pb-16">
-    © 2026 免費長照課程招募 · 用陪伴傳遞溫暖
-  </footer>
+  <footer>© 2026 免費長照課程 · 用陪伴傳遞溫暖</footer>
 </main>
 </body>
 </html>
